@@ -15,4 +15,6 @@ export const loginData = {
     email: "some.user@gmail.com",
     password: "alphaBeta",
   },
+
+  productName: ["Blackberry","Nokia Edge","iphone X","Samsung Note 8"]
 };

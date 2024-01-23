@@ -45,5 +45,36 @@ class  AngularPracticePage {
         return formattedDate;
       }
 
+    clickshop(){
+      cy.get('a[class="nav-link"]').contains('Shop').click()  
+      }
+      
+    clickcheckout1(){
+      cy.contains('Checkout').click()
+      }
+    clickcheckout2(){
+      cy.contains('Checkout').click()
+      }
+    
+    typecountry(){
+      cy.get("#country").type('Ger')
+      }
+    
+    suggestion(){
+      cy.get('.suggestions > ul > li > a').click()
+    }
+
+    clickcheckbox(){
+      cy.get('label[for="checkbox2"]').click()
+    }
+
+    clickSubmit(){
+      cy.get('input[type="submit"]').click()
+    }
+    
+    getalaert(){
+      return cy.get('.alert').invoke('text');
+    }
+
 }
 export default AngularPracticePage;
